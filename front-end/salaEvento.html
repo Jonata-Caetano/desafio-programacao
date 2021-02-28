@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=devide-witdh, inicial-scale=1.0">
+  <title>MaterializeTeste</title>
+  <!--Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Materilize CSS-->
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/filter.css">
+</head>
+
+<body>
+
+  <nav class="light-blue accent-4 z-depth-3">
+    <div class="nav-wrapper white-text container">
+      <a href="#" class="brand-logo"><i class="material-icons">people</i>Sala de Eventos</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+        <li><a class="btn waves-effects waves-light light-blue accent-4" href="index.html"><i
+              class="material-icons right">home</i>Home</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <div class="row container">
+    <form id="form-adiciona">
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="code" name="code" type="text" class="validate">
+          <label for="code">Código</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="name" name="name" type="text" class="validate">
+          <label for="name">Nome</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="capacity" name="capacity" type="text" class="validate">
+          <label for="capacity">Lotação</label>
+        </div>
+    </form>
+    <div style="text-align: right;">
+      <button id="btn-cadastrar" class="btn waves-effect waves-light light-blue accent-4" type="submit"
+        name="action">Cadastrar
+        <i class="material-icons right">add_circle</i>
+      </button>
+    </div>
+    <nav>
+      <div class="nav-wrapper">
+        <form>
+          <div class="input-field waves-light light-blue accent-4">
+            <input id="filtrar-tabela" type="search" name="filtro" placeholder="Digite o nome da sala de evento">
+            <label class="label-icon" for="filtrar-tabela"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+
+  </div>
+
+  <table class="striped">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Lotação</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaSalaEvento">
+    </tbody>
+  </table>
+
+  <!--Jquery-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!--Materilize JS-->
+  <script src="js/materialize.js"></script>
+  <script type="text/javascript" src="js/pessoa.js"></script>
+  <script src="js/salaEvento.js"></script>
+  <script src="js/salaEventoForm.js"></script>
+  <script src="js/salaEventoFilter.js"></script>
+</body>
+
+</html>
