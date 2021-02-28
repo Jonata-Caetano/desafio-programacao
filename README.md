@@ -16,12 +16,12 @@
 - É necessário ter instalado o **Docker** e **Maven**.
 
 
-- Em um terminal de sua preferência, acessa a pasta raiz do Desafio **desafioprogramacao/back-end/desafio/**, executar o comando abaixo:
+- Em um terminal de sua preferência, acessar a pasta raiz do Desafio **desafioprogramacao/back-end/desafio/** e executar o comando abaixo:
 
 ````
-docker-compose-up
+docker-compose up
 ````
-- *Este comando acima, irá subir o Banco de Dados com a estrutura necessária para rodar a aplicação.*
+- *O comando acima, irá subir o Banco de Dados com a estrutura necessária para rodar a aplicação.*
 
 
 - Para acessar o banco de dados, **http://localhost:5050/**
@@ -33,19 +33,21 @@ docker-compose-up
 - Para derrubar o Banco de Dados é necessario ir até o *terminal* e pressionar **CTRL + C.**
 
 
-- Para remover o container por definitivo execute o comando abaixo:
+- Para remover o container por completo, execute o comando abaixo:
 
 ````
 docker-compose rm
 ````
 
 
-- Para rodar uma aplicação é necessario executar o comando abaixo em um *terminal* no seguinte endereço: 
+- Para rodar a **aplicação** é necessario executar os comandos abaixo em um *terminal* no seguinte endereço: 
 
 
-- **desafioprogramacao/back-end/desafio/**. Ele levantará o servidor na porta **http://localhost:8080/**
+- **desafioprogramacao/back-end/desafio/**. Ele levantará o servidor na porta **http://localhost:8080/**.
 
 ````
+mvn compile
+
 mvn spring-boot:run
 ````
 
