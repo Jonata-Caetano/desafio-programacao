@@ -63,10 +63,12 @@ public class EspacoCafeServiceTest {
 		/**
 		 * Os dados que foram mockados devem ser os mesmos que foram mockados
 		 */
-		assertEquals(espacoEntityList.get(0).getId(), mockEspacoEntityList.get(0).getLotacao());
+		assertEquals(espacoEntityList.get(0).getId(), mockEspacoEntityList.get(0).getId());
 		assertEquals(espacoEntityList.get(0).getNome(), mockEspacoEntityList.get(0).getNome());
+		assertEquals(espacoEntityList.get(0).getLotacao(), mockEspacoEntityList.get(0).getLotacao());
 		assertEquals(espacoEntityList.get(1).getId(), mockEspacoEntityList.get(1).getId());
 		assertEquals(espacoEntityList.get(1).getNome(), mockEspacoEntityList.get(1).getNome());
+		assertEquals(espacoEntityList.get(1).getLotacao(), mockEspacoEntityList.get(1).getLotacao());
 	}
 
 	@Test
@@ -92,6 +94,7 @@ public class EspacoCafeServiceTest {
 		assertNotNull(newEspacoEntity);
 		assertEquals(newEspacoEntity.getId(), mockEspacoEntity.getId());
 		assertEquals(newEspacoEntity.getNome(), mockEspacoEntity.getNome());
+		assertEquals(newEspacoEntity.getLotacao(), mockEspacoEntity.getLotacao());
 		verify(mockEspacoRepository).save(any());
 	}
 
